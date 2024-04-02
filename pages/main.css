@@ -3,6 +3,11 @@
     src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Reglarik';
+    src: url('../fonts/Reglarik/Reglarik-j99mj.otf');
+}
+
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
@@ -15,6 +20,11 @@ html, body {
     background-image: url('../assets/test3.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero::after {
@@ -65,27 +75,37 @@ html, body {
 }
 
 .navbar-nav li a:hover {
-    color: #9b59b6;
+    color: #7393B3;
 }
 
 .navbar-nav li a.nav-link.active {
-    color: #9b59b6; 
+    color: #7393B3; 
 }
 
 .navbar-nav .cta-button {
-    color: #9b59b6; 
-    border: 2px solid #9b59b6; 
+    color: #7393B3; 
+    border: 2px solid #7393B3; 
     border-radius: 50px; 
     
     text-decoration: none; 
     display: inline-block; 
     transition: background-color 0.3s ease; 
     background-color: transparent;
-  }
+}
   
   .navbar-nav .cta-button:hover {
-    background-color: #9b59b6; 
+    background-color: #7393B3; 
     color: white; 
-  }
+}
   
+.hero-txt {
+    font-family: 'Reglarik';
+    font-size: 50px;
+    font-weight: bold;
+    color: #7393B3;
+}
 
+.hero-content .lead {
+    font-family: 'Montserrat';
+    color: white;
+}
