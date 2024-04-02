@@ -1,38 +1,91 @@
-body, html {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+html, body {
     height: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
 .hero {
-    background-image: url('../assets/hero\ section.jpg ');
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/test3.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding: 20px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 10;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    margin-right: 75px;
+}
+
+.navbar-nav {
     display: flex;
-    flex-direction: column;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0; 
-}
-
-.navbar li {
-    margin-left: 20px;
-}
-
-.navbar a {
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
+    font-family: "Montserrat";
+    font-size: 16px;
     font-weight: bold;
 }
 
-.navbar a:hover {
-    color: #ccc;
+.navbar li {
+    display: inline-block;
+    padding: 10px;
 }
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #9b59b6;
+}
+
+.navbar-nav li a.nav-link.active {
+    color: #9b59b6; 
+}
+
+.navbar-nav .cta-button {
+    color: #9b59b6; 
+    border: 2px solid #9b59b6; 
+    border-radius: 50px; 
+    
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+    background-color: transparent;
+  }
+  
+  .navbar-nav .cta-button:hover {
+    background-color: #9b59b6; 
+    color: white; 
+  }
+  
+
