@@ -80,16 +80,16 @@ html, body {
 }
 
 .navbar-nav li a:hover {
-    color: #7393B3;
+    color: #a4bebb;
 }
 
 .navbar-nav li a.nav-link.active {
-    color: #7393B3; 
+    color: #a4bebb; 
 }
 
 .navbar-nav .cta-button {
-    color: #7393B3; 
-    border: 2px solid #7393B3; 
+    color: #a4bebb; 
+    border: 2px solid #a4bebb; 
     border-radius: 50px; 
     
     text-decoration: none; 
@@ -99,7 +99,7 @@ html, body {
 }
   
 .navbar-nav .cta-button:hover {
-    background-color: #7393B3; 
+    background-color: #a4bebb; 
     color: white; 
 }
   
@@ -107,7 +107,7 @@ html, body {
     font-family: 'Reglarik';
     font-size: 50px;
     font-weight: bold;
-    color: #7393B3;
+    color: #a4bebb;
 }
 
 .hero-content .lead {
@@ -124,8 +124,8 @@ html, body {
 }
 
 .hero-content .btn:hover {
-    border: 2px solid #7393B3;
-    background-color: #7393B3;
+    border: 2px solid #a4bebb;
+    background-color: #a4bebb;
     color: white;
 }
 
