@@ -138,6 +138,8 @@ html, body {
     font-family: 'Montserrat';
 }
 
-.about-us .button {
-    padding
+.about-us button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
 }
