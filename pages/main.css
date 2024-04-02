@@ -8,6 +8,11 @@
     src: url('../fonts/Reglarik/Reglarik-j99mj.otf');
 }
 
+@font-face {
+    font-family: 'Youbee';
+    src: url(../fonts/Youbee/youbee-bolditalic.ttf);
+}
+
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
@@ -93,7 +98,7 @@ html, body {
     background-color: transparent;
 }
   
-  .navbar-nav .cta-button:hover {
+.navbar-nav .cta-button:hover {
     background-color: #7393B3; 
     color: white; 
 }
@@ -108,4 +113,31 @@ html, body {
 .hero-content .lead {
     font-family: 'Montserrat';
     color: white;
+}
+
+.hero-content .btn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: black;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.hero-content .btn:hover {
+    border: 2px solid #7393B3;
+    background-color: #7393B3;
+    color: white;
+}
+
+.about-us-txt {
+    font-family: 'Youbee';
+    font-weight: bold;
+}
+
+.about-us .lead {
+    font-family: 'Montserrat';
+}
+
+.about-us .button {
+    padding
 }
