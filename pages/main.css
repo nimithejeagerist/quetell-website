@@ -129,17 +129,68 @@ html, body {
     color: white;
 }
 
+/* ABOUT US */
 .about-us-txt {
     font-family: 'Youbee';
     font-weight: bold;
 }
 
-.about-us .lead {
+.about-us .butterfly-img {
+    background: none;
+    width: 396.36px;
+    height: 528,47px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-us .lead-one {
     font-family: 'Montserrat';
+    font-size: medium;
+}
+
+.about-us .lead-two {
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+.about-us .lead-three {
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+.about-us .cta-button {
+    margin-top: 15px;
 }
 
 .about-us button {
     padding: 10px 20px;
     font-size: 16px;
     font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 50px;
 }
+
+.about-us .button-one {
+    background-color: white;
+    color: #7a9794;
+    border-color: #7a9794;
+    border-width: 4px;
+    transition: border-color 0.3s ease ,color 0.3s ease;
+}
+
+.about-us .button-one:hover {
+    color: #8DBEB9;
+    border-color: #8DBEB9;
+}
+
+.about-us .button-two {
+    background-color: #7a9794;
+    color: white;
+}
+
+.about-us .button-two:hover {
+    background-color: #8DBEB9;
+    color: white;
+}
+
+/* SERVICES INFO*/
