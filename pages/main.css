@@ -363,3 +363,67 @@ html, body {
     background-color: #8DBEB9;
     color: white;
 }
+
+/* TESIMONIALS */
+.testimonials-section {
+    position: relative;
+    text-align: center;
+}
+
+.testimonials-background {
+    /* Set the size of your background image container */
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.testimonials-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the entire area without stretching */
+}
+
+.testimonials-container {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 175px; /* Adjust as needed to place it over the background image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    border-radius: 10px; /* Optional rounded corners */
+    display: inline-block;
+    z-index: 2;
+}
+
+.testimonial p {
+    color: #333333;
+    font-size: 1.1em;
+    font-family: 'Montserrat';
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #666666;
+    font-family: 'Montserrat';
+}
+
+.testimonials-section button {
+    background-color: #a4bebb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+}
+
+.testimonials-section button:hover {
+    background-color: #8DBEB9;
+    color: white;
+}
