@@ -289,7 +289,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin-top: 25px;
+    margin: 25px;
 }
   
 .service-item:nth-child(even) .service-info {
@@ -313,13 +313,17 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 25px;
 }
   
 .service-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
+    max-width: 600px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
     object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .services .service-info {
