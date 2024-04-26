@@ -18,6 +18,26 @@ html, body {
     font-family: 'Arial', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8DBEB9;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8DBEB9;
+}
+
+/* LANDING PAGE */
+
 .hero {
     position: relative;
     width: 100%;
@@ -444,6 +464,10 @@ html, body {
     border-color: #8DBEB9;
 }
 
+.footer-container ul {
+    font-weight: bold;
+}
+
 .site-footer .contact-us {
     background-color: #a4bebb;
 }
@@ -451,3 +475,5 @@ html, body {
 .contact-us footer {
     margin: 0px 300px;
 }
+
+/* ABOUT-US PAGE */
