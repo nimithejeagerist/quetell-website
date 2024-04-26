@@ -436,7 +436,11 @@ html, body {
 }
 
 .footer-container {
-    margin: 0 300px;
+    margin: 0 200px;
+}
+
+.contact-us footer {
+    margin: 0px 200px;
 }
 
 .site-footer h5 {
@@ -448,6 +452,3 @@ html, body {
     background-color: #a4bebb;
 }
 
-.contact-us footer {
-    margin: 0px 300px;
-}
