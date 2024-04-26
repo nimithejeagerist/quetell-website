@@ -435,6 +435,10 @@ html, body {
     width: 100%;
 }
 
+.footer-container {
+    margin: 0 300px;
+}
+
 .site-footer h5 {
     font-weight: bold;
     border-color: #8DBEB9;
