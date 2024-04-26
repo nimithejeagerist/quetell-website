@@ -444,10 +444,6 @@ html, body {
     background-color: #a4bebb;
 }
 
-.contact-us .title {
-    margin-left: 300px;
-}
-
-.contact-us ul {
-    margin-right: 300px;
+.contact-us footer {
+    margin: 0px 300px;
 }
