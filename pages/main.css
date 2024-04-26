@@ -357,6 +357,7 @@ html, body {
     font-weight: bold;
     border-radius: 50px;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
 .service-info button:hover {
