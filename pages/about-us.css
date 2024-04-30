@@ -128,23 +128,25 @@ html, body {
   }
 
 .introduction .container {
-  max-width: 1080px;
-  margin: 30px auto;
-  padding: 0 15px;
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 0 15px;
 }
 
 .introduction-title {
-  font-size: 36px;
-  font-family: 'Youbee';
-  color: #333;
-  text-align: center;
-  margin-bottom: 30px;
+    font-size: 36px;
+    font-family: 'Youbee';
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .introduction-content {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.6;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
   
