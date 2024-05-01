@@ -107,6 +107,14 @@ html, body {
     color: #a4bebb; 
 }
 
+.navbar-nav .dropdown-item {
+    color: black;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #8DBEB9;
+}
+
 .navbar-nav .cta-button {
     color: #a4bebb; 
     border: 2px solid #a4bebb; 
