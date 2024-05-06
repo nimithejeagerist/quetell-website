@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Reglarik';
+    src: url('../fonts/Reglarik/Reglarik-j99mj.otf');
+}
+
+@font-face {
+    font-family: 'Youbee';
+    src: url(../fonts/Youbee/youbee-bolditalic.ttf);
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8DBEB9;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8DBEB9;
+}
+
+.introduction {
+    background-color: #fafafa;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 10;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    margin-right: 75px;
+}
+
+.navbar-nav {
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #a4bebb;
+}
+
+.navbar-nav li a.nav-link.active {
+    color: #a4bebb; 
+}
+
+.navbar-nav .dropdown-item {
+    color: black;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #8DBEB9;
+}
+
+.navbar-nav .cta-button {
+    color: #a4bebb; 
+    border: 2px solid #a4bebb; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+    background-color: transparent;
+}
+  
+.navbar-nav .cta-button:hover {
+    background-color: #a4bebb; 
+    color: white; 
+}
+
+.introduction .container-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+.opening-txt {
+    font-size: 75px;
+    font-weight: bold; 
+    font-family: 'Reglarik';
+    color: #8DBEB9;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 7px; 
+    margin-top: 20px; 
+  }
+  
+.image-gallery img {
+    width: 100%; 
+    height: 450px;
+    object-fit: cover; 
+    margin-bottom: 75px;
+}
+
+.service-container {
+    margin: 0px 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    align-items: center; 
+    gap: 50px; 
+}
+
+.service-image {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.service-text h2 {
+    margin-top: 0;
+    color: #333; 
+    font-size: 30px; 
+    font-family: 'Youbee';
+}
+
+.service-text p {
+    color: #666; 
+    line-height: 1.5; 
+    font-size: 16px; 
+    font-family: 'Montserrat';
+}
+
+.service-text .btn {
+    padding: 10px 20px;
+    background-color: #8DBEB9; 
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block; 
+    margin-top: 10px;
+    font-family: 'Montserrat';
+}
+
+.service-text .btn:hover {
+    color: white;
+    background-color: #a4bebb; 
+}
+
+.button-link {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 20px; 
+    background-color: #a4bebb; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    border: none;
+    margin-top: 20px;
+    margin: 0px 300px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.button-link:hover {
+    background-color: #8DBEB9; 
+}
+
+.site-footer {
+    background-color: #f7f7f7;
+    font-family: 'Montserrat';
+    
+    position: absolute;
+    width: 100%;
+}
+
+.footer-container {
+    margin: 0 300px;
+}
+
+.site-footer h5 {
+    font-weight: bold;
+    border-color: #8DBEB9;
+}
+
+.footer-container ul {
+    font-weight: bold;
+}
+
+.site-footer .contact-us {
+    background-color: #a4bebb;
+}
+
+.contact-us footer {
+    margin: 0px 300px;
+}
