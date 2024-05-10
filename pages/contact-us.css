@@ -120,14 +120,12 @@ html, body {
     color: #8DBEB9;
 }
 
-/* General styling for the contact form section */
 .contact-form-section {
     background-color: #fff;
     padding: 30px 20px;
     font-family: 'Montserrat';
 }
 
-/* Form field styling */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -140,7 +138,6 @@ html, body {
     font-size: 16px;
 }
 
-/* Styling the submit button to match the theme */
 .contact-form button {
     background-color: #8DBEB9;
     color: white;
@@ -153,7 +150,35 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the button */
 .contact-form button:hover {
     background-color: #a4bebb;
+}
+
+.site-footer {
+    background-color: #f7f7f7;
+    font-family: 'Montserrat';
+    
+    position: absolute;
+    width: 100%;
+}
+
+.footer-container {
+    margin: 0 300px;
+}
+
+.site-footer h5 {
+    font-weight: bold;
+    border-color: #8DBEB9;
+}
+
+.footer-container ul {
+    font-weight: bold;
+}
+
+.site-footer .contact-us {
+    background-color: #a4bebb;
+}
+
+.contact-us footer {
+    margin: 0px 300px;
 }
