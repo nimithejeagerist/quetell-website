@@ -169,3 +169,44 @@ html, body {
 #eventCarousel {
     margin-bottom: 20px;
 }
+
+.events-calendar .container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Youbee';
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    border-radius: 10px;
+}
+
+.site-footer {
+    background-color: #f7f7f7;
+    font-family: 'Montserrat';
+    
+    position: absolute;
+    width: 100%;
+}
+
+.footer-container {
+    margin: 0 300px;
+}
+
+.site-footer h5 {
+    font-weight: bold;
+    border-color: #8DBEB9;
+}
+
+.footer-container ul {
+    font-weight: bold;
+}
+
+.site-footer .contact-us {
+    background-color: #a4bebb;
+}
+
+.contact-us footer {
+    margin: 0px 300px;
+}
