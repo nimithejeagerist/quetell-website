@@ -144,6 +144,7 @@ html, body {
 
 .item-description {
     font-size: 16px;
+    font-family: 'Montserrat';
     color: #333; /* Dark text color for readability */
 }
 
