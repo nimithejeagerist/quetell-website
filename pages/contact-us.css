@@ -140,16 +140,6 @@ html, body {
     font-size: 16px;
 }
 
-/* Checkbox and label alignment and styling */
-.contact-form .form-check-input {
-    margin-right: 10px;
-}
-
-.contact-form .form-check-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
 /* Styling the submit button to match the theme */
 .contact-form button {
     background-color: #8DBEB9;
