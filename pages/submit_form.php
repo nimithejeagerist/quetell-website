@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email parameters
-    $to = 'nakinroye@gmail.com';  // <<< Replace this with your email address
+    $to = 'nakinroye@gmail.com';  // Ensure this is your correct email address
     $subject = 'New contact from ' . $name;
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
