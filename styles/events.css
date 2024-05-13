@@ -14,8 +14,10 @@
 }
 
 html, body {
+    background-color: #fafafa;
     height: 100%;
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -34,10 +36,6 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #8DBEB9;
-}
-
-.introduction {
-    background-color: #fafafa;
 }
 
 .navbar {
