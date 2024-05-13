@@ -16,6 +16,7 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+    background-color: #fafafa;
 }
 
 ::-webkit-scrollbar {
@@ -34,10 +35,6 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #8DBEB9;
-}
-
-.introduction {
-    background-color: #fafafa;
 }
 
 .navbar {
@@ -152,36 +149,14 @@ html, body {
 .introduction-content {
     font-family: 'Montserrat';
     font-size: 18px;
-    color: #666;
+    color: #666666;
     line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.button-link {
-    display: flex;
-    justify-content: center;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    padding: 10px 20px; 
-    background-color: #a4bebb; 
-    color: white; 
-    text-align: center; 
-    text-decoration: none; 
-    border-radius: 50px; 
-    border: none;
-    margin-top: 20px; 
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}
-
-.button-link:hover {
-    background-color: #8DBEB9; 
+    margin-bottom: 20px;
 }
 
 .site-footer {
     background-color: #f7f7f7;
     font-family: 'Montserrat';
-    
     position: absolute;
     width: 100%;
 }

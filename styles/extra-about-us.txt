@@ -1,0 +1,20 @@
+.button-link {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 20px; 
+    background-color: #a4bebb; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    border: none;
+    margin-top: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.button-link:hover {
+    background-color: #8DBEB9; 
+}
