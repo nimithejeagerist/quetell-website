@@ -64,11 +64,11 @@ html, body {
 
 .navbar-nav li a:hover,
 .navbar-nav .dropdown-item:hover {
-    color: #8DBEB9;
+    color: #a4bebb;
 }
 
 .navbar-nav li a.nav-link.active {
-    color: #a4bebb; 
+    color: #8DBEB9;
 }
 
 .navbar-nav .cta-button {

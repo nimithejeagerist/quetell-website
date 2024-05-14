@@ -80,7 +80,7 @@ html, body {
 }
 
 .navbar-nav li a.nav-link.active {
-    color: #a4bebb; 
+    color: #8DBEB9;
 }
 
 .navbar-nav .dropdown-item {
@@ -126,26 +126,48 @@ html, body {
     margin: 20px;
 }
 
+.shop-header {
+    font-size: 3rem;
+    font-family: 'Youbee';
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .shop-item {
     display: grid;
-    grid-template-columns: 0.35fr 0.65fr; /* 35% for image and 65% for description */
+    grid-template-columns: 0.35fr 0.65fr; 
     gap: 35px;
     margin-bottom: 40px;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
     cursor: pointer;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.shop-item a {
+    display: contents; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .shop-image {
     width: 100%;
-    height: auto;
+    height: 294px;
     border-radius: 50px;
+    object-fit: cover;
     transition: transform 0.5s ease;
 }
 
 .item-description {
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Montserrat';
-    color: #333; /* Dark text color for readability */
+    color: #666666; /* Dark text color for readability */
+}
+
+.header {
+    font-size: 32px;
+    font-family: 'Youbee';
+    color: #333333;
 }
 
 .shop-item:hover .shop-image {

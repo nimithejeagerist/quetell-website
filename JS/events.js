@@ -1,3 +1,4 @@
+// 
 let current = new Date();
 
 function updateCalendar() {
