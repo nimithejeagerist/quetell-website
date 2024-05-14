@@ -175,6 +175,14 @@ html, body {
     margin: 0 300px;
 }
 
+.footer-container .nav-link {
+    transition: color 0.3s ease;
+}
+
+.footer-container .nav-link:hover {
+    color: #8DBEB9 !important;
+}
+
 .site-footer h5 {
     font-weight: bold;
     border-color: #8DBEB9;

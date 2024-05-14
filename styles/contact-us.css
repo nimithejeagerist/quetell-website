@@ -175,6 +175,14 @@ html, body {
     font-weight: bold;
 }
 
+.footer-container .nav-link {
+    transition: color 0.3s ease;
+}
+
+.footer-container .nav-link:hover {
+    color: #8DBEB9 !important;
+}
+
 .site-footer .contact-us {
     background-color: #a4bebb;
 }

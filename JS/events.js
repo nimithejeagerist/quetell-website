@@ -34,6 +34,8 @@ function updateCalendar() {
                     cell.classList.add('highlight');
                 } else if (currentYear === 2024 && currentMonth === 4 && (date === 23 || date === 25)) {
                     cell.classList.add('event-date');
+                } else if (currentYear === 2024 && currentMonth === 5 && date === 22) {
+                    cell.classList.add('event-date');
                 }
                 date++;
             }

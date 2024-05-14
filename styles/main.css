@@ -216,42 +216,44 @@ html, body {
 
 .about-us .lead-one {
     font-family: 'Montserrat';
-    font-size: medium;
+    font-size: 17px;
 }
 
 .about-us .lead-two {
     font-family: 'Montserrat';
-    font-size: medium;
+    font-size: 17px;
 }
 
 .about-us .lead-three {
     font-family: 'Montserrat';
-    font-size: medium;
+    font-size: 17px;
 }
 
 .about-us .cta-button {
     margin-top: 15px;
 }
 
-.about-us button {
+.about-us a {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Montserrat';
     font-weight: bold;
     border-radius: 50px;
+    text-decoration: none; /* Remove underline from anchor tags */
+    display: inline-block; /* Ensure anchor tags behave like buttons */
 }
 
 .about-us .button-one {
     background-color: white;
     color: #a4bebb;
-    border-color: #a4bebb;
-    border-width: 4px;
-    transition: border-color 0.3s ease ,color 0.3s ease;
+    border: 4px solid #a4bebb;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .about-us .button-one:hover {
-    color: #8DBEB9;
-    border-color: #8DBEB9;
+    background-color: white;
+    color: #8DBEB9 !important;
+    border-color: #8DBEB9 !important;
 }
 
 .about-us .button-two {
@@ -262,6 +264,7 @@ html, body {
 .about-us .button-two:hover {
     background-color: #8DBEB9;
     color: white;
+    border: 4px solid #a4bebb;
 }
 
 /* SERVICES INFO*/
@@ -476,6 +479,14 @@ html, body {
 
 .footer-container ul {
     font-weight: bold;
+}
+
+.footer-container .nav-link {
+    transition: color 0.3s ease;
+}
+
+.footer-container .nav-link:hover {
+    color: #8DBEB9 !important;
 }
 
 .site-footer .contact-us {

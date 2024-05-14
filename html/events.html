@@ -53,60 +53,64 @@
         </div>
     </section>
     <section class="events">
-        <div class="event-featured container">
-            <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/assets/fake-event.jpg" alt="Featured Event" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/event-image.JPEG" alt="Second Featured Event" class="d-block w-100">
+        <div class="container mt-5">
+            <div class="row event">
+                <div class="col-md-4">
+                    <img src="/assets/worship-night.JPEG" class="img-fluid" alt="Event Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="event-details">
+                        <h2>Worship Night</h2>
+                        <p>Date: May 23rd, 2024</p>
+                        <p>Location: Strathearn Hall</p>
+                        <p>Join us for a night of worship and community! Enjoy powerful music, inspiring prayers, and uplifting fellowship. Refreshments provided. Open to all!</p>
+                        <a href="https://forms.gle/XmnARXyLGYGzBA6S6" class="btn-register" target="_blank">Register Now</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <div class="event-details">
-                <h2>Heal Queen Heal</h2>
-                <p>Date: January 20, 2025</p>
-                <p>Location: Main Hall</p>
-                <a href="https://forms.gle/uNix8A5aTHxZ9N4L6" class="btn-register" target="_blank">Register Now</a>
+        
+            <div class="row event">
+                <div class="col-md-4">
+                    <img src="/assets/heal-queen-heal.jpg" class="img-fluid" alt="Event Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="event-details">
+                        <h2>Heal Queen Heal</h2>
+                        <p>Date: May 25th, 2024</p>
+                        <p>Location: ?</p>
+                        <p>Join us for an empowering day of healing and celebration! Engage in powerful healing workshops, witness the launch of Q-TELL TV, and celebrate our founder's birthday. Don't miss this transformative event!</p>
+                        <a href="https://forms.gle/uNix8A5aTHxZ9N4L6" class="btn-register" target="_blank">Register Now</a>
+                    </div>
+                </div>
             </div>
+        </div>        
+    </section>
+    <section class="events-calendar">
+        <h2 class="calendar-title">Upcoming Event Dates</h2>
+        <div id="calendar-container" class="container">
+            <div class="calendar-header">
+                <button id="prev-month" onclick="moveCalendar(-1)">&#10094;</button>
+                <h2 id="monthAndYear"></h2>
+                <button id="next-month" onclick="moveCalendar(1)">&#10095;</button>
+            </div>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                    <!-- Calendar days will be dynamically filled here by your JavaScript -->
+                </tbody>
+            </table>
         </div>
-        <section class="events-calendar">
-            <div id="calendar-container" class="container">
-                <div class="calendar-header">
-                    <button id="prev-month" onclick="moveCalendar(-1)">&#10094;</button>
-                    <h2 id="monthAndYear"></h2>
-                    <button id="next-month" onclick="moveCalendar(1)">&#10095;</button>
-                </div>
-                <table class="calendar">
-                    <thead>
-                        <tr>
-                            <th>Sun</th>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th>Sat</th>
-                        </tr>
-                    </thead>
-                    <tbody id="calendar-body">
-                        <!-- Calendar days will be dynamically filled here by your JavaScript -->
-                    </tbody>
-                </table>
-                <div class="calendar-footer">
-                    <span>Select a date to view events or add new events.</span>
-                </div>
-            </div>
-        </section>
+    </section>
 
         <section class="site-footer">
         <div class="footer-container">
@@ -166,6 +170,6 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="events.js" charset="UTF-8"></script>
+    <script src="/JS/events.js" charset="UTF-8"></script>
 </body>
 </html>
