@@ -8,6 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+    <div id="overlayNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#bookings">Book Consultation</a>
+        </div>
+    </div>
     <section class="introduction">
         <nav class="navbar navbar-expand-lg">
             <div class="container-lg">
@@ -16,7 +28,7 @@
                     <img src="../assets/quetell.png" alt="Quetell Organics Logo" height="100px">
                 </a>
                 <!-- Toggler/collapsible Button for mobile view -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" onclick="openNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Navbar links -->
@@ -33,8 +45,8 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-                                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="./events.html">Events</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -56,21 +68,21 @@
     </section>
     <section class="shop-section container-lg mt-5">
         <h2 class="shop-header">Discover Our Wide Range of Products and Services</h2>
-        <div class="shop-item" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
+        <div class="shop-item fade-in" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
             <img src="/assets/merch.png" alt="Merchandise" class="shop-image">
             <div class="item-description">
                 <h2 class="header">Merchandise</h2>
                 <p>Elevate your style with Quetell Organics' line of eco-friendly apparel and accessories. Each piece combines sustainability with fashion, crafted from organic materials to keep you looking great and feeling good about your impact on the planet.</p>
             </div>
         </div>
-        <div class="shop-item" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
+        <div class="shop-item fade-in" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
             <img src="/assets/digital-products.jpeg" alt="Digital Products" class="shop-image">
             <div class="item-description">
                 <h2 class="header">Digital Products</h2>
                 <p>Discover Quetell Organics' bespoke digital products, tailored to enhance your green lifestyle. Our custom packages are designed to fit your unique needs, helping you live sustainably with personalized digital solutions.</p>
             </div>
         </div>
-        <div class="shop-item" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
+        <div class="shop-item fade-in" data-link="https://docs.google.com/forms/d/19Rmfw-YDzM-RX_rY5iQI9K262MHSzurg5H48qALAME0/prefill">
             <img src="/assets/online-services.jpeg" alt="Online Services" class="shop-image">
             <div class="item-description">
                 <h2 class="header">Online Services</h2>
@@ -79,7 +91,7 @@
         </div>        
     </section>
     <section class="site-footer">
-        <div class="footer-container">
+        <div class="footer-container fade-in">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
             <div class="col mb-3">
             <a href="index.html"><img src="/assets/quetell.png" width="200px"/></a>

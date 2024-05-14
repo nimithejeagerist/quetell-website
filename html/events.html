@@ -8,6 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+    <div id="overlayNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#bookings">Book Consultation</a>
+        </div>
+    </div>
     <section class="introduction">
         <nav class="navbar navbar-expand-lg">
             <div class="container-lg">
@@ -16,7 +28,7 @@
                     <img src="../assets/quetell.png" alt="Quetell Organics Logo" height="100px">
                 </a>
                 <!-- Toggler/collapsible Button for mobile view -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" onclick="openNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Navbar links -->
@@ -33,8 +45,8 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-                                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="./events.html">Events</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -56,7 +68,7 @@
     </section>
     <section class="events">
         <div class="container mt-5">
-            <div class="row event">
+            <div class="row event fade-in">
                 <div class="col-md-4">
                     <img src="/assets/worship-night.JPEG" class="img-fluid" alt="Event Image">
                 </div>
@@ -71,7 +83,7 @@
                 </div>
             </div>
         
-            <div class="row event">
+            <div class="row event fade-in">
                 <div class="col-md-4">
                     <img src="/assets/heal-queen-heal.jpg" class="img-fluid" alt="Event Image">
                 </div>
@@ -87,7 +99,7 @@
             </div>
         </div>        
     </section>
-    <section class="events-calendar">
+    <section class="events-calendar fade-in">
         <h2 class="calendar-title">Upcoming Event Dates</h2>
         <div id="calendar-container" class="container">
             <div class="calendar-header">
@@ -115,7 +127,7 @@
     </section>
 
         <section class="site-footer">
-        <div class="footer-container">
+        <div class="footer-container fade-in">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
             <div class="col mb-3">
             <a href="index.html"><img src="/assets/quetell.png" width="200px"/></a>

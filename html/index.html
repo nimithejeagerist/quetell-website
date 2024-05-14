@@ -9,7 +9,19 @@
 </head>
 
 <body>
-    <section class="hero">
+    <div id="overlayNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#bookings">Book Consultation</a>
+        </div>
+    </div>
+    <section class="hero fade-in">
         <nav class="navbar navbar-expand-lg">
             <div class="container-lg">
                 <!-- Brand/logo -->
@@ -17,7 +29,7 @@
                     <img src="../assets/quetell.png" alt="Quetell Organics Logo" height="100px">
                 </a>
                 <!-- Toggler/collapsible Button for mobile view -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler white-toggler" type="button" onclick="openNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Navbar links -->
@@ -63,7 +75,7 @@
             </div>
           </div>      
     </section>
-    <section class="about-us">
+    <section class="about-us fade-in">
         <div class="about-us-banner">
             <span>ABOUT US</span>
         </div>
@@ -86,11 +98,11 @@
           </div>
     </section>
     <section class="services">
-        <div class="services-banner">
+        <div class="services-banner fade-in">
             <span class="services-text">SERVICES</span>
         </div>
         <div class="grid-container">
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Wellness Retreats</h2>
                     <p>Peaceful and rejuvenating environment...</p>
@@ -100,7 +112,7 @@
                     <img src="../assets/wellness-retreats.jpg" alt="Wellness Retreats">
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Pamper Parties</h2>
                     <p>Indulge in luxury with our exclusive pamper parties.</p>
@@ -111,7 +123,7 @@
               </div>
              </div> 
 
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Therapeutic Workshops</h2>
                     <p>Explore creativity and self-expression in our therapeutic craft workshops.</p>
@@ -122,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Corporate Wellness Programs</h2>
                     <p>Elevate workplace wellness with our comprehensive corporate programs.</p>
@@ -133,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Mental Health Programs</h2>
                     <p>Empower your mental health journey with our supportive programs.</p>
@@ -144,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item fade-in">
                 <div class="service-info">
                     <h2>Community Wellness Programs</h2>
                     <p>Community healing through shared wellness and creative expression.</p>
@@ -164,12 +176,11 @@
             <div class="testimonial">
                 <p>"I enjoyed every minute of the self-care workshop. I'll definitely recommend Quetell Organics to the all my friends and family."</p>
                 <cite>-Molly</cite>
-                <button>See All Testimonials</button>
             </div>
         </div>
     </section>
     <section class="site-footer">
-        <div class="footer-container">
+        <div class="footer-container fade-in">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
             <div class="col mb-3">
             <a href="index.html"><img src="/assets/quetell.png" width="200px"/></a>
