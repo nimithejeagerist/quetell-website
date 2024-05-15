@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Map of page URLs to link IDs
     const pageMap = {
-        "/html/index.html": "home-link",
-        "/html/about-us.html": "about-link",
-        "/html/services.html": "services-link",
-        "/html/events.html": "services-link",
-        "/html/shop.html": "shop-link",
-        "/html/contact-us.html": "contact-link",
+        "/pages/index.html": "home-link",
+        "/pages/about-us.html": "about-link",
+        "/pages/services.html": "services-link",
+        "/pages/events.html": "services-link",
+        "/pages/shop.html": "shop-link",
+        "/pages/contact-us.html": "contact-link",
     };
     
     // Get the corresponding link ID
