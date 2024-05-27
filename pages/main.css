@@ -479,8 +479,9 @@ html, body {
 }
 
 .testimonials-background {
+    /* Set the size of your background image container */
     width: 100%;
-    height: 400px;
+    height: 400px; /* Adjust height as needed */
     position: absolute;
     overflow: hidden;
     z-index: 1;
@@ -489,37 +490,24 @@ html, body {
 .testimonials-background img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.testimonials-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    object-fit: cover; /* This will cover the entire area without stretching */
 }
 
 .testimonials-container {
     position: relative;
     background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    margin-top: 100px; /* Adjust as needed to place it over the background image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    border-radius: 10px; /* Optional rounded corners */
     display: inline-block;
     z-index: 2;
-    max-width: 600px;
-    max-height: 300px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
 }
 
 .testimonial p {
     color: #333333;
     font-size: 1.1em;
     font-family: 'Montserrat';
-    margin: 0;
 }
 
 .testimonial cite {
@@ -528,42 +516,6 @@ html, body {
     margin-bottom: 15px;
     color: #666666;
     font-family: 'Montserrat';
-}
-
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    z-index: 3;
-}
-
-.carousel-control-prev {
-    left: -40px;
-}
-
-.carousel-control-next {
-    right: -40px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 15px;
-    height: 15px;
-    background-color: white; /* Ensure the icons are visible */
-    mask: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23000" d="M2.5 0L1.5 1 4 4 1.5 7 2.5 8 6 4 2.5 0z"/%3E%3C/svg%3E') center / contain no-repeat;
-}
-
-.carousel-control-next-icon {
-    mask: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23000" d="M1.5 0L0.5 1 3 4 0.5 7 1.5 8 5 4 1.5 0z"/%3E%3C/svg%3E') center / contain no-repeat;
 }
 
 /* Footer */
