@@ -169,14 +169,37 @@
         </div>       
     </section>
     <section class="testimonials-section">
-        <div class="testimonials-background">
-            <img src="../assets/testimonial-backdrop.jpg" alt="Background" />
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <p>"I enjoyed every minute of the self-care workshop. I'll definitely recommend Quetell Organics to the all my friends and family."</p>
-                <cite>-Molly</cite>
+        <div class="testimonials-wrapper">
+            <div id="testimonialCarousel" class="carousel slide testimonials-container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <p>"I enjoyed every minute of the self-care workshop. I'll definitely recommend Quetell Organics to all my friends and family."</p>
+                            <cite>- Molly</cite>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p>"The wellness retreat was a transformative experience. The team at Quetell Organics is amazing."</p>
+                            <cite>- John</cite>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p>"Pamper parties are luxurious and rejuvenating. A must-try for everyone!"</p>
+                            <cite>- Sarah</cite>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
     <section class="site-footer">
