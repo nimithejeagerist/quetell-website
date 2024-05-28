@@ -257,16 +257,15 @@ html, body {
 
     .image-gallery {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 5px;
     }
 
     .image-gallery img {
-        height: auto;
-        margin-bottom: 20px;
+        height: 200px
     }
 
     .introduction .container {
-        margin: 0 10px;
+        margin: 10px 10px;
         padding: 0 10px;
     }
 
@@ -275,7 +274,11 @@ html, body {
     }
 
     .introduction-content {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    
+    .site-footer li{
+        font-size: 15px;
     }
 
     .footer-container {

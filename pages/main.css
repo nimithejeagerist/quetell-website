@@ -17,6 +17,7 @@ html, body {
     height: 100%;
     scroll-behavior: smooth;
     font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +50,7 @@ html, body {
     transform: translateY(0);
 }
 
-/* Overlay navigation menu */
+/* Overlay */
 .overlay {
     height: 100%;
     width: 0;
@@ -314,8 +315,8 @@ html, body {
     font-family: 'Montserrat';
     font-weight: bold;
     border-radius: 50px;
-    text-decoration: none; /* Remove underline from anchor tags */
-    display: inline-block; /* Ensure anchor tags behave like buttons */
+    text-decoration: none; 
+    display: inline-block; 
 }
 
 .about-us .button-one {
@@ -442,7 +443,7 @@ html, body {
 .service-info h2,
 .service-info p,
 .service-info button {
-    margin-bottom: 1rem; /* Spacing between each element */
+    margin-bottom: 1rem; 
 }
 
 .service-info h2 {
@@ -473,56 +474,88 @@ html, body {
 }
 
 /* TESIMONIALS */
-.testimonials-section {
+.testimonials .testimonials-banner {
+    background-color: #a4bebb; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+.testimonials .testimonials-text {
+    font-size: 50px;
+    font-family: "Youbee";
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.testimonials .testimonials-text:before,
+.testimonials .testimonials-text:after {
+    content: '|';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+.testimonials .testimonials-text:before {
+    left: 0;
+    transform: translateX(-150%) translateY(-50%); 
+}
+
+.testimonials .testimonials-text:after {
+    right: 0;
+    transform: translateX(150%) translateY(-50%); 
+}
+
+.testimonials {
     position: relative;
     text-align: center;
 }
 
-.testimonials-background {
-    /* Set the size of your background image container */
-    width: 100%;
-    height: 400px; /* Adjust height as needed */
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.testimonials-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will cover the entire area without stretching */
-}
-
 .testimonials-container {
-    position: relative;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 100px; /* Adjust as needed to place it over the background image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
-    border-radius: 10px; /* Optional rounded corners */
-    display: inline-block;
-    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    border-radius: 10px; 
 }
 
-.testimonial p {
-    color: #333333;
-    font-size: 1.1em;
-    font-family: 'Montserrat';
+.testimonials-item {
+    margin-top: 30px;
+    margin: 30px 30px;
+    background-color: #8DBEB9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.testimonial cite {
+.testimonials-item p {
+    padding: 20px 30px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word; 
+    text-align: center; 
+}
+
+.testimonials-item cite {
     display: block;
     margin-top: 10px;
     margin-bottom: 15px;
-    color: #666666;
-    font-family: 'Montserrat';
+    color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
 }
 
 /* Footer */
 .site-footer {
     background-color: #f7f7f7;
     font-family: 'Montserrat';
-    margin-top: 100px;
     position: absolute;
     width: 100%;
 }
@@ -557,6 +590,93 @@ html, body {
 }
 
 /* Media Queries */
+@media (max-width: 1200px) {
+    .testimonials .testimonials-text {
+        font-size: 40px;
+    }
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .testimonials-item p {
+        font-size: 15px;
+    }
+    .service-item:nth-child(even) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(odd) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(even) .service-image {
+        order: 1; 
+    }
+      
+    .service-item:nth-child(odd) .service-image {
+        order: 1;
+    }
+    
+    .services .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .service-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .services .services-text {
+        font-size: 35px;
+    }
+    .services .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .service-item {
+        grid-template-columns: 1fr;
+    }
+    .service-item:nth-child(even) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(odd) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(even) .service-image {
+        order: 1; 
+    }
+      
+    .service-item:nth-child(odd) .service-image {
+        order: 1;
+    }
+    .service-info h2 {
+        font-size: 24px;
+    }
+    .service-info p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .service-info .service-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .service-image img {
+        max-width: 100%;
+    }
+    .testimonials .testimonials-text {
+        font-size: 35px;
+    }
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .testimonials-item p {
+        font-size: 14px;
+    }
+    .site-footer li{
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-content {
         padding: 10px;
@@ -585,12 +705,29 @@ html, body {
         flex-direction: column;
     }
 
+    .service-item:nth-child(even) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(odd) .service-info {
+        order: 2; 
+    }
+      
+    .service-item:nth-child(even) .service-image {
+        order: 1; 
+    }
+      
+    .service-item:nth-child(odd) .service-image {
+        order: 1;
+    }
+
     .service-info h2 {
         font-size: 24px;
     }
 
     .service-info p {
         font-size: 14px;
+        text-align: center;
     }
 
     .service-info .service-button {
@@ -598,9 +735,18 @@ html, body {
         padding: 8px 15px;
     }
 
+    .testimonials .testimonials-text {
+        font-size: 30px;
+    }
     .testimonials-container {
-        margin-top: 50px;
-        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+    .testimonials-item p {
+        font-size: 13px;
+    }
+
+    .site-footer li{
+        font-size: 15px;
     }
 
     .footer-container {
@@ -609,5 +755,14 @@ html, body {
 
     .contact-us footer {
         margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials .testimonials-text {
+        font-size: 25px;
+    }
+    .testimonials-item p {
+        font-size: 12px;
     }
 }

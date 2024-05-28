@@ -318,17 +318,17 @@ html, body {
 /* Media Queries */
 @media (max-width: 768px) {
     .opening-txt {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .image-gallery {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 5px;
     }
 
     .image-gallery img {
-        height: auto;
-        margin-bottom: 20px;
+        height: 200px;
+        margin: 0px;
     }
 
     .service-container {
@@ -352,6 +352,10 @@ html, body {
 
     .button-link {
         margin: 20px 10px;
+    }
+
+    .site-footer li {
+        font-size: 15px;
     }
 
     .footer-container {

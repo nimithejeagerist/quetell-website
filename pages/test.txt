@@ -1,0 +1,99 @@
+.testimonials-section {
+    position: relative;
+    text-align: center;
+}
+
+.testimonials-background {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.testimonials-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the entire area without stretching */
+}
+
+.testimonials-container {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 100px; /* Adjust as needed to place it over the background image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    border-radius: 10px; /* Optional rounded corners */
+    display: inline-block;
+    z-index: 2;
+}
+
+.testimonial p {
+    color: #333333;
+    font-size: 1.1em;
+    font-family: 'Montserrat';
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #666666;
+    font-family: 'Montserrat';
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff !important; /* Blue background color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White color for the icons */
+}
+
+.carousel-control-next {
+    margin-left: 100px;
+}
+
+
+testimonials
+
+        <div class="testimonials-background">
+            <img src="../assets/testimonial-backdrop.jpg" alt="Background" />
+        </div>
+        <div class="carousel-container">
+            <div id="testimonialCarousel" class="carousel slide testimonials-container" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <p>"I enjoyed every minute of the self-care workshop. I'll definitely recommend Quetell Organics to all my friends and family."</p>
+                            <cite>- Molly</cite>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p>"The wellness retreat was a transformative experience. The team at Quetell Organics is amazing."</p>
+                            <cite>- John</cite>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p>"Pamper parties are luxurious and rejuvenating. A must-try for everyone!"</p>
+                            <cite>- Sarah</cite>
+                        </div>
+                    </div>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>

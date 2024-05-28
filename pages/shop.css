@@ -246,17 +246,6 @@ html, body {
     transform: scale(1.1);
 }
 
-/* Optional: Additional styling for hover effects or responsive adjustments */
-@media (max-width: 768px) {
-    .shop-item {
-        grid-template-columns: 1fr; /* Stack image and description on smaller screens */
-        gap: 10px;
-    }
-    .item-description {
-        padding: 10px;
-    }
-}
-
 .site-footer {
     background-color: #f7f7f7;
     font-family: 'Montserrat';
@@ -296,6 +285,15 @@ html, body {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .shop-item {
+        grid-template-columns: 1fr; /* Stack image and description on smaller screens */
+        gap: 10px;
+    }
+
+    .item-description {
+        padding: 10px;
+    }
+
     .opening-txt {
         font-size: 50px;
     }
@@ -310,11 +308,24 @@ html, body {
     }
 
     .shop-image {
-        height: auto;
+        height: 300px;
+    
     }
 
     .item-description {
         padding: 10px;
+    }
+
+    .item-description h2 {
+        font-size: 26px;
+    }
+
+    .item-description p {
+        font-size: 14px;
+    }
+
+    .site-footer li {
+        font-size: 15px;
     }
 
     .footer-container {

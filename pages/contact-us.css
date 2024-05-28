@@ -284,6 +284,10 @@ html, body {
         padding: 8px 15px;
         font-size: 16px;
     }
+    
+    .site-footer li {
+        font-size: 15px;
+    }
 
     .footer-container {
         margin: 0 10px;
