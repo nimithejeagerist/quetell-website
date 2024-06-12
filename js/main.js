@@ -10,13 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
         "/pages/services.html": "services-link",
         "/pages/events.html": "services-link",
         "/pages/shop.html": "shop-link",
+        "/pages/coming-soon.html": "coming-soon",
         "/pages/contact-us.html": "contact-link",
     };
     
     // Get the corresponding link ID
     const linkId = pageMap[currentPage];
-    console.log("Current page:", currentPage);
-    console.log("Mapped linkId:", linkId);
     
     // If a matching link is found, add the active class and aria-current attribute
     if (linkId) {

@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Quetell Organics</title>
+    <link href="/styles/coming-soon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div id="overlayNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+            <a href="coming-soon.html">Shop</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#bookings">Book Consultation</a>
+        </div>
+    </div>
+    <section class="introduction fade-in">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-lg">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/quetell.png" alt="Quetell Organics Logo" height="100px">
+                </a>
+                <!-- Toggler/collapsible Button for mobile view -->
+                <button class="navbar-toggler" type="button" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="services-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="./events.html">Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="coming-soon" href="coming-soon.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-lg text-center mt-5">
+            <div class="opening-txt">COMING SOON . . .</div>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

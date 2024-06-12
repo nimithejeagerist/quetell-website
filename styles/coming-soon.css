@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Reglarik';
+    src: url('../fonts/Reglarik/Reglarik-j99mj.otf');
+}
+
+@font-face {
+    font-family: 'Youbee';
+    src: url(../fonts/Youbee/youbee-bolditalic.ttf);
+}
+
+html, body {
+    height: 100vh;
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8DBEB9;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8DBEB9;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Overlay navigation menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat';
+    background-color: rgba(44, 61, 73, 0.03);
+    margin: 10px 35px;
+    border-radius: 50px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #8DBEB9;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #a4bebb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.overlay .closebtn:hover {
+    color: white; 
+    background-color: #8DBEB9; 
+    transform: scale(1.1); 
+}
+
+.navbar {
+    position: absolute;
+    z-index: 10;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    margin-right: 75px;
+}
+
+.navbar-nav {
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #a4bebb;
+}
+
+.navbar-nav li a.nav-link.active {
+    color: #8DBEB9;
+}
+
+.navbar-nav .dropdown-item {
+    color: black;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #8DBEB9;
+}
+
+.navbar-nav .cta-button {
+    color: #a4bebb; 
+    border: 2px solid #a4bebb; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+    background-color: transparent;
+}
+  
+.navbar-nav .cta-button:hover {
+    background-color: #a4bebb; 
+    color: white; 
+}
+
+.introduction .container-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening-txt {
+    margin-top: 175px;
+    font-size: 75px;
+    font-weight: bold; 
+    font-family: 'Reglarik';
+    color: #8DBEB9;
+}
